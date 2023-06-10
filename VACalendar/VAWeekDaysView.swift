@@ -18,6 +18,7 @@ public struct VAWeekDaysViewAppearance {
     
     let symbolsType: VAWeekDaysSymbolsType
     let weekDayTextColor: UIColor
+    let weekEndDayTextColor: UIColor
     let weekDayTextFont: UIFont
     let leftInset: CGFloat
     let rightInset: CGFloat
@@ -27,6 +28,7 @@ public struct VAWeekDaysViewAppearance {
     public init(
         symbolsType: VAWeekDaysSymbolsType = .veryShort,
         weekDayTextColor: UIColor = .black,
+        weekEndDayTextColor: UIColor = .black,
         weekDayTextFont: UIFont = UIFont.systemFont(ofSize: 15),
         leftInset: CGFloat = 10.0,
         rightInset: CGFloat = 10.0,
@@ -34,6 +36,7 @@ public struct VAWeekDaysViewAppearance {
         calendar: Calendar = Calendar.current) {
         self.symbolsType = symbolsType
         self.weekDayTextColor = weekDayTextColor
+        self.weekEndDayTextColor = weekEndDayTextColor
         self.weekDayTextFont = weekDayTextFont
         self.leftInset = leftInset
         self.rightInset = rightInset
@@ -103,7 +106,7 @@ public class VAWeekDaysView: UIView {
             label.text = name
             label.textAlignment = .center
             label.font = appearance.weekDayTextFont
-            label.textColor = appearance.weekDayTextColor
+            label.textColor = name == "Sun" ? appearance.weekEndDayTextColor: appearance.weekDayTextColor
             dayLabels.append(label)
             addSubview(label)
         }

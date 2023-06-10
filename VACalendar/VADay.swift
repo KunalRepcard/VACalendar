@@ -18,6 +18,16 @@ public enum VADayShape: Int {
     case square, circle
 }
 
+enum WeekDay: Int {
+        case sunday = 1
+        case monday
+        case tuesday
+        case wednesday
+        case thursday
+        case friday
+        case saturday
+    }
+
 public enum VADaySupplementary: Hashable {
     
     // 3 dot max
@@ -77,13 +87,17 @@ class VADay {
         self.calendar = calendar
     }
     
+    func dayIsSunday(_ date: Date) -> Int {
+        //return calendar.isDateInWeekend(date)
+        return calendar.component(Calendar.Component.weekday, from: date)
+    }
+        
     func dateInDay(_ date: Date) -> Bool {
         return calendar.isDate(date, equalTo: self.date, toGranularity: .day)
     }
     
     func setSelectionState(_ state: VADayState) {
         guard state == reverseSelectionState && isSelectable else { return }
-        
         self.state = state
     }
     

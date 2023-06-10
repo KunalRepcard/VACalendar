@@ -68,10 +68,11 @@ public class VAMonthHeaderView: UIView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        let buttonWidth: CGFloat = 50.0
-        monthLabel.frame = CGRect(x: 0, y: 0, width: appearance.monthTextWidth, height: frame.height)
+        let buttonWidth: CGFloat = 10.0
+//        monthLabel.frame = CGRect(x: 0, y: 0, width: appearance.monthTextWidth, height: frame.height)
+        monthLabel.frame = CGRect(x: 0, y: 0, width: 160, height: frame.height)
         monthLabel.center.x = center.x
-        previousButton.frame = CGRect(x: monthLabel.frame.minX - buttonWidth, y: 0, width: buttonWidth, height: frame.height)
+        previousButton.frame = CGRect(x: monthLabel.frame.minX - buttonWidth , y: 0, width: buttonWidth, height: frame.height)
         nextButton.frame = CGRect(x: monthLabel.frame.maxX, y: 0, width: buttonWidth, height: frame.height)
     }
     

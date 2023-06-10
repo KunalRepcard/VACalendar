@@ -12,12 +12,14 @@ import UIKit
 public protocol VADayViewAppearanceDelegate: class {
     @objc optional func font(for state: VADayState) -> UIFont
     @objc optional func textColor(for state: VADayState) -> UIColor
+    @objc optional func textColorSunday() -> UIColor
     @objc optional func textBackgroundColor(for state: VADayState) -> UIColor
     @objc optional func backgroundColor(for state: VADayState) -> UIColor
     @objc optional func borderWidth(for state: VADayState) -> CGFloat
     @objc optional func borderColor(for state: VADayState) -> UIColor
     @objc optional func dotBottomVerticalOffset(for state: VADayState) -> CGFloat
     @objc optional func shape() -> VADayShape
+    @objc optional func cornerRadius(for state: VADayState) -> CGFloat
     // percent of the selected area to be painted
     @objc optional func selectedArea() -> CGFloat
 }
@@ -71,9 +73,9 @@ class VADayView: UIView {
     func setupDay() {
         let shortestSide: CGFloat = (frame.width < frame.height ? frame.width : frame.height)
         let side: CGFloat = shortestSide * (dayViewAppearanceDelegate?.selectedArea?() ?? 0.8)
-        
         dateLabel.font = dayViewAppearanceDelegate?.font?(for: day.state) ?? dateLabel.font
         dateLabel.text = VAFormatters.dayFormatter.string(from: day.date)
+        print("--->\(day.dayIsSunday(day.date))")
         dateLabel.textAlignment = .center
         dateLabel.frame = CGRect(
             x: 0,
@@ -103,11 +105,19 @@ class VADayView: UIView {
         backgroundColor = dayViewAppearanceDelegate?.backgroundColor?(for: state) ?? backgroundColor
         layer.borderColor = dayViewAppearanceDelegate?.borderColor?(for: state).cgColor ?? layer.borderColor
         layer.borderWidth = dayViewAppearanceDelegate?.borderWidth?(for: state) ?? dateLabel.layer.borderWidth
-        
-        dateLabel.textColor = dayViewAppearanceDelegate?.textColor?(for: state) ?? dateLabel.textColor
+        layer.cornerRadius = dayViewAppearanceDelegate?.cornerRadius?(for: state) ?? 0.0
         dateLabel.backgroundColor = dayViewAppearanceDelegate?.textBackgroundColor?(for: state) ?? dateLabel.backgroundColor
-        
+        updateSundayTextColor(state)
         updateSupplementaryViews()
+    }
+    
+    private func updateSundayTextColor(_ state: VADayState){
+        dateLabel.textColor = dayViewAppearanceDelegate?.textColor?(for: state) ?? dateLabel.textColor
+       
+        if day.dayIsSunday(day.date) == 1 {
+            dateLabel.textColor = dayViewAppearanceDelegate?.textColorSunday?() 
+        }
+        
     }
     
     private func updateSupplementaryViews() {

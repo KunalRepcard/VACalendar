@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3155DACB2A34C7E70044FEF5 /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DABE2A34C7E70044FEF5 /* VACalendarView.swift */; };
+		3155DACC2A34C7E70044FEF5 /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DABF2A34C7E70044FEF5 /* VADayView.swift */; };
+		3155DACD2A34C7E70044FEF5 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC02A34C7E70044FEF5 /* VAMonth.swift */; };
+		3155DACE2A34C7E70044FEF5 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC12A34C7E70044FEF5 /* VAWeekDaysView.swift */; };
+		3155DACF2A34C7E70044FEF5 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC22A34C7E70044FEF5 /* VADay.swift */; };
+		3155DAD02A34C7E70044FEF5 /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC32A34C7E70044FEF5 /* VAWeek.swift */; };
+		3155DAD12A34C7E70044FEF5 /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC42A34C7E70044FEF5 /* VACalendarMonthDelegate.swift */; };
+		3155DAD22A34C7E70044FEF5 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC52A34C7E70044FEF5 /* VAFormatters.swift */; };
+		3155DAD32A34C7E70044FEF5 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC62A34C7E70044FEF5 /* VAWeekView.swift */; };
+		3155DAD42A34C7E70044FEF5 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC72A34C7E70044FEF5 /* VACalendar.swift */; };
+		3155DAD52A34C7E70044FEF5 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC82A34C7E70044FEF5 /* VAMonthHeaderView.swift */; };
+		3155DAD62A34C7E70044FEF5 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DAC92A34C7E70044FEF5 /* VADotView.swift */; };
+		3155DAD72A34C7E70044FEF5 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DACA2A34C7E70044FEF5 /* VAMonthView.swift */; };
 		60086D62204C707A002097E7 /* VACalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 60086D60204C707A002097E7 /* VACalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60086D76204C712F002097E7 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D69204C712E002097E7 /* VADay.swift */; };
-		60086D77204C712F002097E7 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6A204C712E002097E7 /* VADotView.swift */; };
-		60086D78204C712F002097E7 /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6B204C712E002097E7 /* VADayView.swift */; };
-		60086D79204C712F002097E7 /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6C204C712E002097E7 /* VACalendarView.swift */; };
-		60086D7A204C712F002097E7 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6D204C712E002097E7 /* VACalendar.swift */; };
-		60086D7B204C712F002097E7 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6E204C712E002097E7 /* VAWeekDaysView.swift */; };
-		60086D7C204C712F002097E7 /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D6F204C712E002097E7 /* VAWeek.swift */; };
-		60086D7D204C712F002097E7 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D70204C712E002097E7 /* VAMonth.swift */; };
-		60086D7E204C712F002097E7 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D71204C712E002097E7 /* VAWeekView.swift */; };
-		60086D7F204C712F002097E7 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D72204C712E002097E7 /* VAFormatters.swift */; };
-		60086D80204C712F002097E7 /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D73204C712E002097E7 /* VACalendarMonthDelegate.swift */; };
-		60086D81204C712F002097E7 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D74204C712F002097E7 /* VAMonthView.swift */; };
-		60086D82204C712F002097E7 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60086D75204C712F002097E7 /* VAMonthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3155DABE2A34C7E70044FEF5 /* VACalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarView.swift; sourceTree = "<group>"; };
+		3155DABF2A34C7E70044FEF5 /* VADayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADayView.swift; sourceTree = "<group>"; };
+		3155DAC02A34C7E70044FEF5 /* VAMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonth.swift; sourceTree = "<group>"; };
+		3155DAC12A34C7E70044FEF5 /* VAWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekDaysView.swift; sourceTree = "<group>"; };
+		3155DAC22A34C7E70044FEF5 /* VADay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADay.swift; sourceTree = "<group>"; };
+		3155DAC32A34C7E70044FEF5 /* VAWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeek.swift; sourceTree = "<group>"; };
+		3155DAC42A34C7E70044FEF5 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
+		3155DAC52A34C7E70044FEF5 /* VAFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAFormatters.swift; sourceTree = "<group>"; };
+		3155DAC62A34C7E70044FEF5 /* VAWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekView.swift; sourceTree = "<group>"; };
+		3155DAC72A34C7E70044FEF5 /* VACalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendar.swift; sourceTree = "<group>"; };
+		3155DAC82A34C7E70044FEF5 /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthHeaderView.swift; sourceTree = "<group>"; };
+		3155DAC92A34C7E70044FEF5 /* VADotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADotView.swift; sourceTree = "<group>"; };
+		3155DACA2A34C7E70044FEF5 /* VAMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthView.swift; sourceTree = "<group>"; };
 		60086D5D204C707A002097E7 /* VACalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VACalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60086D60204C707A002097E7 /* VACalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VACalendar.h; sourceTree = "<group>"; };
 		60086D61204C707A002097E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60086D69204C712E002097E7 /* VADay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADay.swift; sourceTree = "<group>"; };
-		60086D6A204C712E002097E7 /* VADotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADotView.swift; sourceTree = "<group>"; };
-		60086D6B204C712E002097E7 /* VADayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADayView.swift; sourceTree = "<group>"; };
-		60086D6C204C712E002097E7 /* VACalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarView.swift; sourceTree = "<group>"; };
-		60086D6D204C712E002097E7 /* VACalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendar.swift; sourceTree = "<group>"; };
-		60086D6E204C712E002097E7 /* VAWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekDaysView.swift; sourceTree = "<group>"; };
-		60086D6F204C712E002097E7 /* VAWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeek.swift; sourceTree = "<group>"; };
-		60086D70204C712E002097E7 /* VAMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonth.swift; sourceTree = "<group>"; };
-		60086D71204C712E002097E7 /* VAWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekView.swift; sourceTree = "<group>"; };
-		60086D72204C712E002097E7 /* VAFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAFormatters.swift; sourceTree = "<group>"; };
-		60086D73204C712E002097E7 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
-		60086D74204C712F002097E7 /* VAMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthView.swift; sourceTree = "<group>"; };
-		60086D75204C712F002097E7 /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,19 +73,19 @@
 			isa = PBXGroup;
 			children = (
 				60086D60204C707A002097E7 /* VACalendar.h */,
-				60086D6D204C712E002097E7 /* VACalendar.swift */,
-				60086D73204C712E002097E7 /* VACalendarMonthDelegate.swift */,
-				60086D6C204C712E002097E7 /* VACalendarView.swift */,
-				60086D69204C712E002097E7 /* VADay.swift */,
-				60086D6B204C712E002097E7 /* VADayView.swift */,
-				60086D6A204C712E002097E7 /* VADotView.swift */,
-				60086D72204C712E002097E7 /* VAFormatters.swift */,
-				60086D70204C712E002097E7 /* VAMonth.swift */,
-				60086D75204C712F002097E7 /* VAMonthHeaderView.swift */,
-				60086D74204C712F002097E7 /* VAMonthView.swift */,
-				60086D6F204C712E002097E7 /* VAWeek.swift */,
-				60086D6E204C712E002097E7 /* VAWeekDaysView.swift */,
-				60086D71204C712E002097E7 /* VAWeekView.swift */,
+				3155DAC72A34C7E70044FEF5 /* VACalendar.swift */,
+				3155DAC42A34C7E70044FEF5 /* VACalendarMonthDelegate.swift */,
+				3155DABE2A34C7E70044FEF5 /* VACalendarView.swift */,
+				3155DAC22A34C7E70044FEF5 /* VADay.swift */,
+				3155DABF2A34C7E70044FEF5 /* VADayView.swift */,
+				3155DAC92A34C7E70044FEF5 /* VADotView.swift */,
+				3155DAC52A34C7E70044FEF5 /* VAFormatters.swift */,
+				3155DAC02A34C7E70044FEF5 /* VAMonth.swift */,
+				3155DAC82A34C7E70044FEF5 /* VAMonthHeaderView.swift */,
+				3155DACA2A34C7E70044FEF5 /* VAMonthView.swift */,
+				3155DAC32A34C7E70044FEF5 /* VAWeek.swift */,
+				3155DAC12A34C7E70044FEF5 /* VAWeekDaysView.swift */,
+				3155DAC62A34C7E70044FEF5 /* VAWeekView.swift */,
 				60086D61204C707A002097E7 /* Info.plist */,
 			);
 			path = VACalendar;
@@ -133,7 +133,7 @@
 				TargetAttributes = {
 					60086D5C204C707A002097E7 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1420;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,19 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60086D76204C712F002097E7 /* VADay.swift in Sources */,
-				60086D78204C712F002097E7 /* VADayView.swift in Sources */,
-				60086D7B204C712F002097E7 /* VAWeekDaysView.swift in Sources */,
-				60086D7E204C712F002097E7 /* VAWeekView.swift in Sources */,
-				60086D80204C712F002097E7 /* VACalendarMonthDelegate.swift in Sources */,
-				60086D7A204C712F002097E7 /* VACalendar.swift in Sources */,
-				60086D7C204C712F002097E7 /* VAWeek.swift in Sources */,
-				60086D7D204C712F002097E7 /* VAMonth.swift in Sources */,
-				60086D82204C712F002097E7 /* VAMonthHeaderView.swift in Sources */,
-				60086D81204C712F002097E7 /* VAMonthView.swift in Sources */,
-				60086D7F204C712F002097E7 /* VAFormatters.swift in Sources */,
-				60086D77204C712F002097E7 /* VADotView.swift in Sources */,
-				60086D79204C712F002097E7 /* VACalendarView.swift in Sources */,
+				3155DAD52A34C7E70044FEF5 /* VAMonthHeaderView.swift in Sources */,
+				3155DAD02A34C7E70044FEF5 /* VAWeek.swift in Sources */,
+				3155DAD72A34C7E70044FEF5 /* VAMonthView.swift in Sources */,
+				3155DACD2A34C7E70044FEF5 /* VAMonth.swift in Sources */,
+				3155DAD62A34C7E70044FEF5 /* VADotView.swift in Sources */,
+				3155DAD42A34C7E70044FEF5 /* VACalendar.swift in Sources */,
+				3155DACC2A34C7E70044FEF5 /* VADayView.swift in Sources */,
+				3155DAD32A34C7E70044FEF5 /* VAWeekView.swift in Sources */,
+				3155DAD22A34C7E70044FEF5 /* VAFormatters.swift in Sources */,
+				3155DACE2A34C7E70044FEF5 /* VAWeekDaysView.swift in Sources */,
+				3155DACF2A34C7E70044FEF5 /* VADay.swift in Sources */,
+				3155DACB2A34C7E70044FEF5 /* VACalendarView.swift in Sources */,
+				3155DAD12A34C7E70044FEF5 /* VACalendarMonthDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
