@@ -48,6 +48,19 @@ public class VACalendar {
         months = generateMonths(from: startDate, endDate: endDate)
     }
     
+    public init(forYears: Int = 200, sDate: Date? = Date(), cal: Calendar = Calendar.current) {
+        self.calendar = cal
+        
+        if let selectedDate = sDate {
+            let day = VADay(date: selectedDate, state: .selected, calendar: calendar)
+            selectedDays = [day]
+        }
+        
+        let startDate = calendar.date(byAdding: .year, value: (-1 * forYears), to: Date())!
+        let endDate = calendar.date(byAdding: .year, value: forYears, to: Date())!
+        months = generateMonths(from: startDate, endDate: endDate)
+    }
+    
     func selectDay(_ day: VADay) {
         months.first(where: { $0.dateInThisMonth(day.date) })?.setDaySelectionState(day, state:.selected)
         selectedDays = [day]
@@ -117,18 +130,4 @@ public class VACalendar {
         
         return months
     }
-    
-    public init(forYears: Int = 200, sDate: Date? = Date(), cal: Calendar = Calendar.current) {
-        self.calendar = cal
-        
-        if let selectedDate = sDate {
-            let day = VADay(date: selectedDate, state: .selected, calendar: calendar)
-            selectedDays = [day]
-        }
-        
-        let startDate = calendar.date(byAdding: .year, value: (-1 * forYears), to: Date())!
-        let endDate = calendar.date(byAdding: .year, value: forYears, to: Date())!
-        months = generateMonths(from: startDate, endDate: endDate)
-    }
-    
 }
